@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#323232"
+    tools:context=".Animate_splash" >
+
+    <ImageView 
+        android:id="@+id/logo_s"
+          android:layout_width="250dp"
+    android:layout_height="250dp"
+       android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+   android:src="@drawable/logosplash"
+        />
+
+       <TextView
+           android:id="@+id/copywright"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_centerHorizontal="true"
+         
+           android:paddingBottom="40dp"
+           android:text="© all rights reserved"
+           android:textColor="#30B4E2"
+           android:textSize="30sp"
+           android:textStyle="bold" />
+
+</RelativeLayout>

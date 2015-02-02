@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#323232"
+   >
+
+    <RelativeLayout
+        android:id="@+id/viewactor_mail_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+       >
+        <TextView
+            android:id="@+id/productid"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/register_image"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/default_image"
+            android:clickable="true"
+            android:visibility="visible" />
+        <ImageView
+            android:id="@+id/register_image1"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_toRightOf="@+id/as_layout"
+            android:background="@drawable/default_image"
+            android:clickable="true"
+            android:visibility="visible" />
+        <FrameLayout
+            android:id="@+id/as_layout"
+            android:layout_toRightOf="@+id/register_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-20dp"
+            android:layout_marginRight="-20dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/register_image3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_toRightOf="@+id/as_layout"
+                android:background="@drawable/imageas"
+                android:clickable="true"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/productprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="as"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/actor_detail"
+        android:layout_below="@+id/viewactor_mail_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+
+        >
+        <TextView
+            android:id="@+id/character"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="character name"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/as"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="as"
+            android:layout_toRightOf="@+id/character"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/actor"
+            android:layout_toRightOf="@+id/as"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="actor name"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/prodtwobutton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/actor_detail"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp" >
+
+
+        <RelativeLayout
+            android:id="@+id/shopingdetail1_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:minHeight="30dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/detailico"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="#2BAF73"
+                android:clickable="true"
+
+                android:scaleType="center"
+                android:src="@drawable/view_detail" />
+
+            <TextView
+                android:id="@+id/viewdetail_text"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_toRightOf="@+id/detailico"
+                android:background="#55BF8E"
+                android:clickable="true"
+                android:fontFamily=""
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="viewdetail"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prodtwobutton"
+        android:layout_marginTop="10dp"
+        >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.2dp"
+            android:background="@android:color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>
